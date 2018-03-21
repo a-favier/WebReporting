@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB REPORTING</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/s_index.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+<div class="row">
+    <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8">
+        <form class="form-horizontal well" method="post" action="traitement/connect.php">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>WebReporting Connexion</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input id="pseudo" name="pseudo" type="text" placeholder="Pseudo" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input id="pass" name="pass" type="password" placeholder="Password" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-12 control-label" for="send"></label>
+                    <div class="col-md-12">
+                        <button id="send" name="send" class="btn btn-md btn-primary"><span class="glyphicon glyphicon-ok"></span> Envoyer</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row alert">
+</div>
+
+
+
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    var url = window.location.search;
+
+    if(url.substring(url.lastIndexOf("=")+1) == 1){
+        $('.alert').append("<div class='alert col-md-offset-4 col-md-4  col-sm-offset-2 col-sm-8 alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong><i class=\"fa fa-exclamation-triangle\"></i> Les identifiants que vous avez saisie sont faux !</strong></div>");
+    }
+
+    if(url.substring(url.lastIndexOf("=")+1) == 2){
+        $('.alert').append("<div class='alert col-md-offset-4 col-md-4  col-sm-offset-2 col-sm-8 alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong><i class=\"fa fa-exclamation-triangle\"></i> Serveur injoignable</strong></div>");
+    }
+</script>
+</body>
+</html>

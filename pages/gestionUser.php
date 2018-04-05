@@ -11,14 +11,14 @@ $inactif = Requete::getResult('listeUserInactif', $listeVariable);
 
     <section class="row">
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
-            <h1 class="text-center">Gestion des services</h1>
+            <h1 class="text-center">Gestion des utilisateurs</h1>
         </div>
     </section>
 
     <section class="row">
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
             <table class="table table-striped table-condensed">
-                <legend>Utilisateurs Activer</legend>
+                <legend>Utilisateurs Activés</legend>
                 <thead>
                 <tr>
                     <th class="text-center">Pseudo</th>
@@ -52,7 +52,7 @@ $inactif = Requete::getResult('listeUserInactif', $listeVariable);
     <section class="row">
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
             <table class="table table-striped table-condensed">
-                <legend>Utilisateurs Desactiver</legend>
+                <legend>Utilisateurs Desactivés</legend>
                 <thead>
                 <tr>
                     <th class="text-center">Pseudo</th>

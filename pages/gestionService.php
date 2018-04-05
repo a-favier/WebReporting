@@ -58,7 +58,7 @@ $listeService = Requete::getResult('listeService', $listeVariable);
     </section>
 
     <section class="row">
-        <a href="createService.php" class="btn btn-lg btn-success col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-10"><i class="fa fa-pencil"></i> Crée un nouveau service</a>
+        <a href="createService.php" class="btn btn-lg btn-success col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-10"><i class="fa fa-pencil"></i> Créer un nouveau service</a>
     </section>
 
 

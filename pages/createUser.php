@@ -58,7 +58,7 @@ if(isset($_POST['id'])){
 
             <!-- Multiple Checkboxes -->
             <div class="form-group col-sm-12 well">
-                <label class="col-md-4 control-label" for="">Droit Généraux</label>
+                <label class="col-md-4 control-label" for="">Droits Généraux</label>
                 <div class="col-md-4">
                     <div class="checkbox">
                         <?php
@@ -78,7 +78,7 @@ if(isset($_POST['id'])){
 
             <!-- Multiple Checkboxes -->
             <div class="form-group col-sm-12 well">
-                <label class="col-md-4 control-label" for="checkboxes">Accès Service</label>
+                <label class="col-md-4 control-label" for="checkboxes">Accès Services</label>
                 <div class="col-md-4">
                     <div class="checkbox">
                         <?php
@@ -95,7 +95,7 @@ if(isset($_POST['id'])){
             </div>
             <!-- Multiple Checkboxes -->
             <div class="form-group col-sm-12 well">
-                <label class="col-md-4 control-label" for="checkboxes">Accès Atelier</label>
+                <label class="col-md-4 control-label" for="checkboxes">Accès Ateliers</label>
                 <div class="col-md-8">
                     <div class="checkbox">
                         <?php

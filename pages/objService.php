@@ -10,7 +10,7 @@ $serviceNom= $result[0]['nom'];
 
     <section class="row">
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
-            <h1 class="text-center">Liste des objectif du service : Amiotte Clavière</h1>
+            <h1 class="text-center">Liste des objectifs du service : <?php echo $serviceNom ?></h1>
         </div>
     </section>
     <?php foreach ($result as $key => $atelier){

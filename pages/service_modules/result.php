@@ -37,11 +37,7 @@ for ($i=0;$i<7;$i++){
         if(empty($result)){
             $flag = false;
         }else{
-            foreach ($result[0] as $key => $value){
-                if($value == 0){
-                    $flag = false;
-                }
-            }
+            $flag = true;
         }
 
         $lastSixDate[$jourSemaine[$calculDate->format('N')] . ' ' . $calculDate->format('d/m/Y')] = $flag;
@@ -50,6 +46,7 @@ for ($i=0;$i<7;$i++){
 
 //On renverse le tableau pour la chronologie
 $lastSixDate = array_reverse($lastSixDate);
+
 
 //On récupère les objectif du service
 $listeVariable = array($donnee['atelierId']);
@@ -61,7 +58,7 @@ $result = Requete::getResult('objParAtelier', $listeVariable);
 <section class="row">
     <div class="col-md-12">
         <h2 class="text-center">Résultats sur les six jours précédents</h2>
-        <p class="text-center">(Les jours en rouge sont les jours sans saisie ou avec une saisie incomplète)</p>
+        <p class="text-center">(Les jours en rouge sont les jours sans saisie)</p>
     </div>
     <table class="table table-responsive table-bordered well">
         <thead>

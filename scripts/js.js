@@ -67,7 +67,7 @@ function addAtelier(){
 function addChamps(){
     $number = $("#endOfChamps").val();
 
-    $("#endOfChamps").before("<div class='list-group'><div class='list-group-item has-feedback col-xs-6'><label class='control-label' for='idWarning'>Nom</label><input type='text' name='chpLibel" + $number  + "' id='chpLibel" + $number  + "' class='form-control'></div><div class='list-group-item has-feedback col-xs-6'><label class='control-label' for='idWarning'>Adresse</label><input type='text' name='chpName" + $number  + "' id='chpName" + $number  + "' class='form-control'></div></div>");
+    $("#endOfChamps").before("<div class='list-group-item has-feedback col-xs-12'><label class='control-label' for='idWarning'>Nom</label><input type='text' name='chpLibel" + $number  + "' id='chpLibel" + $number  + "' class='form-control'></div>");
 
     $number = parseInt($number) + 1 ;
     $('#endOfChamps').val($number);

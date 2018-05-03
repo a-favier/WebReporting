@@ -27,11 +27,6 @@ include('../frame/header.php');
                     <input type="text" name="serviceName" id="serviceName" class="form-control" required>
                 </div>
 
-                <div class="form-group has-feedback">
-                    <label class="control-label" for="idError">Adresse du service</label>
-                    <input type="text" name="serviceAdr" id="serviceAdr" class="form-control" required>
-                </div>
-
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">Les Atelier</h3>

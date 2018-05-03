@@ -1,10 +1,10 @@
 <?php
 class PDOFactory
 {
-    private static $host = "vmapp02";
-    private static $dbname = "webReporting";
-    private static $user = "web_reporting";
-    private static $password = "vmapp02WEB";
+    private static $host = "";
+    private static $dbname = "";
+    private static $user = "";
+    private static $password = "";
 
     public static function getMysqlConnexion()
     {
